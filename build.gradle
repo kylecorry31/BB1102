@@ -4,7 +4,7 @@ version '1.0'
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "com.kylecorry.bb1102.Main"
+mainClassName = "com.kylecorry.bb1102.ui.Main"
 
 sourceCompatibility = 1.8
 

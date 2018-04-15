@@ -1,6 +1,8 @@
-package com.kylecorry.bb1102;
+package com.kylecorry.bb1102.ui;
 
 import com.jfoenix.controls.JFXRadioButton;
+import com.kylecorry.bb1102.*;
+import com.kylecorry.bb1102.trash.*;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,7 +17,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class DetectionController implements Initializable {
 
     @FXML
     private Label classificationsLbl;
@@ -30,7 +32,7 @@ public class Controller implements Initializable {
 
     private ITrashDetector getDetectionAlgorithm(){
         if(weightedRadio.isSelected()){
-            return new WeightedTrashDetector();
+            return new AveragedTrashDetector();
         } else if (tallyRadio.isSelected()){
             return new TallyTrashDetector();
         } else {

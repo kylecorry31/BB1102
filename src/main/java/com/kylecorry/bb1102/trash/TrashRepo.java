@@ -1,4 +1,4 @@
-package com.kylecorry.bb1102;
+package com.kylecorry.bb1102.trash;
 
 import java.util.Arrays;
 import java.util.List;

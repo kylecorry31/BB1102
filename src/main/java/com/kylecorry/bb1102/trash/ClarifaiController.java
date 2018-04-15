@@ -1,4 +1,4 @@
-package com.kylecorry.bb1102;
+package com.kylecorry.bb1102.trash;
 
 import clarifai2.api.ClarifaiBuilder;
 import clarifai2.api.ClarifaiClient;

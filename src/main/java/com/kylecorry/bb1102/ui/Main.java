@@ -1,4 +1,4 @@
-package com.kylecorry.bb1102;
+package com.kylecorry.bb1102.ui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,8 +1,8 @@
-package com.kylecorry.bb1102;
+package com.kylecorry.bb1102.trash;
 
 import java.util.List;
 
-public class WeightedTrashDetector implements ITrashDetector {
+public class AveragedTrashDetector implements ITrashDetector {
     @Override
     public double containsTrash(List<Classification> classifications, TrashRepo trashRepo) {
         double trashProbability = 0;

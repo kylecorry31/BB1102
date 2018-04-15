@@ -1,4 +1,4 @@
-package com.kylecorry.bb1102;
+package com.kylecorry.bb1102.ui;
 
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
