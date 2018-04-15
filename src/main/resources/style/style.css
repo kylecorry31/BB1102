@@ -2,16 +2,13 @@
     -color-primary: #003a6c;
     -color-primary-dark: #003a6c;
     -color-primary-light: #3c6ab2;
-    -color-accent: #003a6c;
-    -color-background: #f2f2f2;
+    -color-accent: rgb(33, 64, 154);
+    -color-background: rgb(250, 250, 250);
     -color-text: BLACK;
-    -color-header: WHITE;
     -color-button-text: WHITE;
-    -color-approved: #008000;
-    -color-rejected: #800000;
 }
 
-.button-raised {
+.jfx-button {
     -fx-padding: 0.7em 0.57em;
     -fx-font-size: 14px;
     -jfx-button-type: RAISED;
@@ -20,49 +17,46 @@
     -fx-text-fill: -color-button-text;
 }
 
-.custom-jfx-check-box {
+.jfx-check-box {
     -jfx-checked-color: -color-accent;
     -jfx-unchecked-color: -color-accent;
     -fx-text-fill: -color-text;
     -fx-font-size: 13px;
 }
 
-.custom-jfx-combo-box {
+.jfx-combo-box {
     -jfx-focus-color: -color-accent;
     -jfx-unfocus-color: -color-accent;
 }
 
-.custom-jfx-combo-box > .combo-box-popup .list-view .jfx-list-cell {
+.jfx-combo-box > .combo-box-popup .list-view .jfx-list-cell {
     -fx-background-color: -color-background;
     -fx-border-color: -color-background;
 }
 
-.custom-jfx-combo-box > .combo-box-popup .list-view .jfx-list-cell:hover {
+.jfx-combo-box > .combo-box-popup .list-view .jfx-list-cell:hover {
     -fx-background-color: #94a000;
+    /* TODO: standardize this */
 }
 
-.custom-jfx-radio-button {
+.jfx-radio-button {
     -jfx-selected-color: -color-accent;
     -jfx-unselected-color: -color-accent;
     -fx-text-fill: -color-text;
 }
 
-.custom-jfx-progress-bar > .bar {
+.jfx-progress-bar > .bar {
     -fx-background-color: -color-accent;
     -fx-background-radius: 0;
     -fx-background-insets: 0, 0, 0, 0;
 }
 
-.settingsPane, .settingsPaneHolder {
-    -fx-background-color: -color-background;
-}
-
-.custom-jfx-slider {
+.jfx-slider {
     -jfx-default-thumb: -color-accent;
     -jfx-default-track: -color-text;
 }
 
-.custom-jfx-slider .slider-value {
+.jfx-slider .slider-value {
     -fx-stroke: -color-background;
     -fx-font-size: 10;
 }
@@ -73,22 +67,19 @@
 
 .root {
     -fx-background-color: -color-background;
-}
-
-.header {
-    -fx-font-size: 20px;
-    -fx-font-family: 'sans-serif' !important;
+    -fx-base: -color-accent;
+    -fx-background: -color-background;
 }
 
 .jfx-rippler {
     -jfx-rippler-fill: -color-accent;
 }
 
-.custom-jfx-date-picker {
+.jfx-date-picker {
     -jfx-default-color: -color-accent;
 }
 
-.custom-jfx-text-field {
+.jfx-text-field {
     -jfx-focus-color: -color-accent;
     -jfx-label-float: true;
 }
@@ -97,20 +88,16 @@
     -fx-text-fill: -color-text;
 }
 
-.custom-jfx-text-area {
+.jfx-text-area {
     -jfx-focus-color: -color-accent;
     -jfx-label-float: true;
 }
 
-.custom-jfx-text-area .content {
+.jfx-text-area .content {
     -fx-background-color: -color-background;
 }
 
-.custom-jfx-scroll-pane .main-header {
-    -fx-background-color: -color-background;
-}
-
-.custom-jfx-scroll-pane, .custom-vbox{
+.jfx-scroll-pane .main-header {
     -fx-background-color: -color-background;
 }
 
@@ -144,40 +131,6 @@
 .scroll-pane {
     -fx-background-color: -color-background;
      -fx-border-color: -color-background;
-}
-
-.root{
-    -fx-base: -color-accent;
-    -fx-background: -color-background;
-}
-
-
-/*
-.button {
-    -fx-background: -color-accent;
-}
-
-.header {
-    -fx-text-color: -color-primary;
-}
-
-.title {
-    -fx-text-fill: white;
-    -fx-background-color: -color-primary;
-}*/
-
-#ttbID {
-    -fx-text-fill: grey;
-    -fx-font-size: 12px;
-}
-
-#toolbar-title {
-    -fx-text-fill: -color-header;
-    -fx-font-size: 24px;
-}
-
-.toolbar-text {
-    -fx-text-fill: -color-header;
 }
 
 .table-view, .tree-table-view {
@@ -264,44 +217,6 @@
     -fx-border-color: lightgrey;
 }
 
-.list-item-selected {
-    -fx-background-color: #e0e0e0;
-}
-
-
-.list-item-empty {
-    -fx-padding: 16;
-    -fx-pref-width: 300;
-    -fx-spacing: 8;
-    -fx-alignment: CENTER;
-    -fx-background-color: -color-background;
-}
-
-.list-item-empty * {
-   -fx-text-fill: grey;
-}
-
-.list {
-    -fx-padding: 0;
-}
-
-.subhead {
-    -fx-text-fill: grey;
-}
-
-.approved {
-    -fx-text-fill: -color-approved;
-    -fx-font-weight: bold;
-}
-
-.approve-button {
-    -fx-background-color: #008000;
-}
-
-.rejected {
-    -fx-text-fill: -color-rejected;
-    -fx-font-weight: bold;
-}
 
 .jfx-snackbar-content {
     -fx-background-color: #323232;
