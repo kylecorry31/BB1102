@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="600.0" spacing="32.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kylecorry.bb1102.Controller">
+   <children>
+      <ImageView fx:id="trashImage" fitHeight="254.0" fitWidth="281.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="classificationsLbl" text="No classifications" wrapText="true" />
+      <JFXButton onAction="#chooseImage" styleClass="button-raised" text="Choose Image" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="16.0">
+         <children>
+            <Label text="Detection Algorithm:" />
+            <JFXRadioButton fx:id="weightedRadio" selected="true" styleClass="custom-jfx-radio-button" text="Average">
+               <toggleGroup>
+                  <ToggleGroup fx:id="detectionAlg" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="highestRadio" styleClass="custom-jfx-radio-button" text="Highest" toggleGroup="$detectionAlg" />
+            <JFXRadioButton fx:id="tallyRadio" styleClass="custom-jfx-radio-button" text="Tally" toggleGroup="$detectionAlg" />
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+</VBox>
