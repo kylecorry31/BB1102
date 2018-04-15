@@ -16,3 +16,6 @@ my_map.html
 plastic.csv
 plastic_plotter.py
 api-key.txt
+currentData/
+final_map.png
+test.png
